@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+/* Navigation Bar */
+.container{
+    overflow-x: none;
+}
+.navContainer{
+    background-color: #DDDDDD;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   position: relative; 
+}
+nav{
+    width: 100%;
+    padding-right: 2rem;
+}
+#navList{
+    list-style: none;
+    font-size: 1.1rem;
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    gap: 10px;
+    float: right;
+}
+.icon{
+    color: #76885B;
+}
+#navName{
+    font-size: 2.0rem;
+    color: #627254;
+}
+a{
+    text-decoration: none;
+    color: #627254;
+}
+#navItems{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 80px;
+}
+#navItems a:hover{
+    text-decoration: underline;
+}
+button{
+   font-size: 1rem;
+}
+
+/* Content */
+.contentBox{
+    width: 70%;
+    margin: auto;
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 3rem;
+    box-shadow: 0px 0px 30px black;
+}
+.item{
+    display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.leftBox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.leftBox h2{
+    font-size: 2rem;
+}
+.rightBox{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s linear 0s;
+}
+
+.rightBox img{
+    height: 400px;
+    border-radius: 20px;
+    transition: all 0.6s  linear 0s;
+}
+.rightBox:hover{
+    transform: scale(1.2);
+    
+}
+.rightBox .overlay{
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+background-color: rgba(0, 0, 0, 0.378);
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 20px;
+opacity: 0;
+transition: all 0.3s linear 0s ;
+}
+.rightBox .overlay span{
+    color: white;
+    font-size: 1.2rem;
+
+}
+.rightBox:hover .overlay{
+    opacity: 1;
+
+}
+.ingredients{
+    font: 1.3rem;
+}
+.procedure{
+    font: 1.1rem;
+}
+
+/* Footer */
+.footer{
+    width: 100%;
+}
+.footerBox{
+    background-color:#DDDDDD;
+    width: 100%;
+    text-align: center;
+    min-height: 40px;
+}
+.footerBox p{
+    color: #627254;
+    font-size: 1rem;
+
+}
