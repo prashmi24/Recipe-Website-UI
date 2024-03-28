@@ -28,7 +28,8 @@ nav{
     padding: 15px;
     align-items: center;
     gap: 10px;
-    float: right;
+    justify-content: center;
+
 }
 .icon{
     color: #76885B;
@@ -45,6 +46,7 @@ a{
     display: flex;
     justify-content: space-evenly;
     gap: 80px;
+    margin-left: 200px;
 }
 #navItems a:hover{
     text-decoration: underline;
